@@ -12,19 +12,48 @@
 :root {
   scroll-behavior: smooth;
 }
-.small-input {
-    width: 15px;
-    height: 30px;
-    font-size: 14px;
-    padding: 5px;
-    box-sizing: border-box;
+.img-thumbnail-custom {
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensures images are scaled properly */
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #f6f9ff;
+  color: #444444;
+}
 .header {
     background: #fff;
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+/* Custom styles for the search form */
+.search-form {
+    width: 100%;
+    max-width: 400px; /* Adjust this value as needed */
+}
+
+.search-input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-form button {
+    background-color: #007bff; /* Button color */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.search-form button i {
+    margin: 0;
+}
+
 
 .search-bar input {
     border-radius: 0.25rem 0 0 0.25rem;
@@ -58,16 +87,6 @@
     gap: 10px;
 }
 
-.img-thumbnail-custom {
-    width: 150px; /* Fixed width */
-    height: 150px; /* Fixed height */
-    object-fit: cover; /* Ensures images are scaled properly */
-}
-body {
-  font-family: "Open Sans", sans-serif;
-  background: #f6f9ff;
-  color: #444444;
-}
 
 a {
   color: #4154f1;
